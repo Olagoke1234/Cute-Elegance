@@ -1,6 +1,7 @@
 body {
     width: 100%;
-    background-color: rgb(228, 235, 235);
+    height: 100%;
+    background-color: rgb(167, 139, 108);
     box-sizing: border-box;
     
 }
@@ -9,40 +10,114 @@ body {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 10px;
+    padding: 10px 5px;
 }
 
-.topnav #logo {
+.topnav .wrapper {
+    flex: 30%;
+}
+
+.topnav .wrapper .outer {
     width: 100%;
-    height: auto;
-    padding: 20px;
+    height: 100%;
+    background-color: transparent;
+    padding-left: 30px;
 }
 
+.topnav .wrapper .outer .alpha {
+   width: 120px;
+   height: 120px;
+   border: 9px solid black;
+   border-radius: 50%;
+   position: relative;
+   background-color: rgb(70, 6, 70);
+}
+
+.topnav .wrapper .outer .alpha .one {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Elsie Swash Caps', cursive;
+    color: white;
+    position: absolute;
+    top: -45px;
+    left: 20px;
+ }
+
+ .topnav .wrapper .outer .alpha .two {
+    font-size: 60px;
+    font-weight: bolder;
+    font-family: 'Elsie Swash Caps', cursive;
+    color: white;
+    position: absolute;
+    top: -25px;
+    left: 55px;
+ }
+
+ 
+
+ .topnav .wrapper .name-wrapper{
+     flex: 70%;
+     width: 100%;
+     background-color: transparent;
+ }
+
+ .topnav .wrapper .name-wrapper .border{
+    width: 210px;
+    height: 35px;
+    background-color: rgba(111, 119, 128, 0.5);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.topnav .wrapper .name-wrapper .border .three {
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Tangerine', cursive;
+    color: black;
+    position: absolute;
+    top: -18px;
+    word-spacing: 0.2rem;
+    letter-spacing: 7px;
+}
+
+.topnav .wrapper .name-wrapper .border .four {
+    font-size: 12px;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    position: absolute;
+    top: 9px;
+    word-spacing: 0.7rem;
+    letter-spacing: 2px;
+}
 .topnav #links1 {
+    flex: 60%;
     width: 100%;
     height: auto;
+    padding-top: 145px;
+    margin-left: -20px;
 }
 
 .topnav #links1 .links {
     display: inline;
-    padding: 20px;
+    padding: 3px;
 }
 
 .topnav #links1 .links a {
     text-decoration: none;
-    color: black;
-    font-size: 20px;
+    color: white;
+    font-size: 15px;
 }
 
 .topnav #logo img {
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    
+    width: 180px;  
+    padding-left: 10px; 
 }
 
 
@@ -53,9 +128,10 @@ body {
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-image: url(../images/wall5.jpg);
+    background-image: url(../images/fabric2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding-top: 20px;   
     padding-bottom: 20px;
 }
@@ -70,21 +146,66 @@ body {
 }
 
 .mainbody .services {
-    width: 100%;
+    width: 95%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+}
+
+.mainbody .services .sections {
+    width: 100%;
 }
 
 .mainbody .services .sections h2{
-    padding:  5px 20px;
-    color: blueviolet;
+    padding:  1px 20px;
+    color: rgb(70, 6, 70);
 }
 
 .mainbody .services .sections p{
-    padding: 5px 20px;
-    color: white;
+    padding: 10px 10px;
+    color: rgb(51, 9, 51);
     background-color: transparent;
     border: 0.5px solid gainsboro;
     margin: 20px;
     border-radius: 4px;
 }
+
+.footer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    
+}
+
+.footer .address{
+    text-align: center;
+    
+}
+
+.footer .address p{
+    color: rgb(70, 6, 70);
+    
+}
+
+.footer .address p em{
+    color: black;
+    
+}
+
+.footer .email{
+    color: rgb(70, 6, 70);
+    
+}
+
+.footer .socials{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+}
+
+.footer .socials .if{
+    padding-top: 18px;   
+}
+
+

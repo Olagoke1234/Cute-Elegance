@@ -1,0 +1,32 @@
+.middlesect {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/fabric2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.middlesect .tiles {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.middlesect .tiles .tile-img {
+    width: 80%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.middlesect .tiles .tile-img img {
+    width: 300px;
+    height: 300px;   
+}
