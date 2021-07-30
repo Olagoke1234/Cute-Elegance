@@ -1,5 +1,5 @@
 body {
-    width: 100%;
+    width: 96.8%;
     height: 100%;
     background-color: rgb(167, 139, 108);
     box-sizing: border-box;
@@ -19,6 +19,7 @@ body {
 
 .topnav .wrapper {
     flex: 30%;
+    margin-left: -5px;
 }
 
 .topnav .wrapper .outer {
@@ -60,8 +61,7 @@ body {
  
 
  .topnav .wrapper .name-wrapper{
-     flex: 70%;
-     width: 100%;
+    width: 100%;
      background-color: transparent;
  }
 
@@ -97,22 +97,41 @@ body {
     letter-spacing: 2px;
 }
 .topnav #links1 {
-    flex: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex: 65%;
     width: 100%;
     height: auto;
-    padding-top: 145px;
-    margin-left: -20px;
-}
+    padding-top: 30px;
+    text-align: right;
+    padding-right: 5px;
+ }
 
 .topnav #links1 .links {
-    display: inline;
-    padding: 3px;
+   padding: 12px; 
+    
+}
+
+.topnav #links1 .links:hover {
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
 
 .topnav #links1 .links a {
     text-decoration: none;
     color: white;
     font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.topnav #links1 .links a:active {
+    color: black;
+}
+
+.topnav #links1 .links a:hover {
+    color: indianred;
 }
 
 .topnav #logo img {
@@ -121,53 +140,78 @@ body {
 }
 
 
-.mainbody{
+
+.middlesect {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/fabric2.jpg);
+    background-repeat: repeat;
+    background-position: center center;
+    object-fit: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/fabric2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 20px;   
-    padding-bottom: 20px;
-}
-
-.mainbody .labelname {
-    width: 100%;
-}
-
-.mainbody .labelname h1{
-    color: white;
     text-align: center;
 }
 
-.mainbody .services {
-    width: 95%;
-    display: grid;
-    grid-template-columns: 1fr;
+.middlesect .tiles {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid goldenrod;
+    margin: 10px;
 }
 
-.mainbody .services .sections {
+.middlesect .tiles .tile-title h2{
+    font-family: 'Elsie Swash Caps', cursive;
+    font-weight: bolder;
+    font-size: 30px;
+    color: navy;
+}
+
+.middlesect .tiles .tile-img {
     width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.mainbody .services .sections h2{
-    padding:  1px 20px;
-    color: rgb(70, 6, 70);
+.middlesect .tiles .tile-link {
+    padding: 20px;
 }
 
-.mainbody .services .sections p{
-    padding: 10px 10px;
-    color: rgb(51, 9, 51);
-    background-color: transparent;
-    border: 0.5px solid gainsboro;
-    margin: 20px;
-    border-radius: 4px;
+.middlesect .tiles .tile-link p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: navy;
 }
+
+.middlesect .tiles .tile-link a{
+    font-size: 18px;
+    color: rgb(2, 2, 14);
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.middlesect .tiles .tile-link a:hover{
+    color: white;
+    opacity: 0.5;
+}
+
+.middlesect .tiles .tile-img img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;   
+}
+
+
 
 .footer {
     width: 90%;
@@ -185,18 +229,25 @@ body {
 }
 
 .footer .address p{
-    color: rgb(70, 6, 70);
-    
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer .address p em{
     color: black;
-    
+    font-family: 'Elsie Swash Caps', cursive;
 }
 
-.footer .email{
-    color: rgb(70, 6, 70);
-    
+
+.footer .email a{
+    color: navajowhite;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer .phone{
+   color: white;
+   font-family: 'Elsie Swash Caps', cursive;
 }
 
 .footer .socials{
@@ -205,7 +256,18 @@ body {
 }
 
 .footer .socials .if{
-    padding-top: 18px;   
+    padding-top: 25px;  
+    
+}
+
+.footer .socials .if a{
+    color: white; 
+    font-family: 'Elsie Swash Caps', cursive;
 }
 
 
+.footer .socials .whatsapp p{
+    color: white; 
+    padding-top: 8px; 
+    font-family: 'Elsie Swash Caps', cursive;
+}
