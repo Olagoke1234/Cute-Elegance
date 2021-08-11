@@ -3,6 +3,7 @@ body {
     height: 100%;
     background-color: rgb(167, 139, 108);
     box-sizing: border-box;
+   
     
 }
 
@@ -50,6 +51,12 @@ body {
     .topnav .wrapper {
         flex: 22%;
         margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    .topnav .wrapper {
+        flex: 70%;
     }
 }
 
@@ -129,23 +136,53 @@ body {
     letter-spacing: 2px;
 }
 .topnav #links1 {
-    flex: 50%;
+    flex: 10%;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
  }
 
  @media screen and (min-width: 641px) and (max-width: 1007px){
 .topnav #links1 {
     flex: 75%;
-    margin-left: -8px;       
+    margin-left: -5px;       
     display: flex;
     flex-direction: row;
-    padding-top: 160px;
+    padding: 5px 7px;
+    align-items: center;
+    justify-content: center;   
+    text-align: left;
+    background-color: brown;
+    margin-top: 135px;
+    border-radius: 5px;
+    width: 100%;
     }
  }
 
+ @media screen and (min-width: 1008px) {
+    .topnav #links1 {
+        flex: 30%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        background-color: rgb(70, 6, 70);
+        padding: 5px 5px;
+      
+    }
+}
+
+
+
+
 .topnav #links1 .links {
-   padding: 8px 22px; 
-    
+   padding: 8px 18px; 
 }
 
     
@@ -155,21 +192,90 @@ body {
     border-radius: 5px;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .topnav #links1 .links { 
+        padding: 5px 5px;
+        width: 24%;
+        text-align: center;
+        
+    }
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .topnav #links1 .links:hover { 
+        background-color: rgb(221, 141, 141);
+    }
+}
+
+
+@media screen and (min-width: 1008px) {
+    .topnav #links1 .links {
+      padding: 10px 45px;
+      width: 15%;
+      background-color: rgba(111, 119, 128, 0.5);
+      border: 0.5px solid black;
+      border-radius: 5px;
+      margin: 0px 7px;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    .topnav #links1 .links:hover {
+        background-image: url(../images/fabric2.jpg);
+       background-size: cover;
+       color: rgb(48, 5, 48);
+       background-color: rgb(0, 0, 0);
+    }
+}
+
+
+
 .topnav #links1 .links a {
     text-decoration: none;
     color: white;
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
+    text-align: left;
 }
 
+
+.topnav #links1 .links a:hover {
+    color: indianred;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .topnav #links1 .links a{ 
+        font-size: 1rem;
+        color: white;
+      }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .topnav #links1 .links a:hover { 
+        border-bottom: 0.5px solid goldenrod;
+        border-radius: 0px;
+        color: black;
+        }
+}
+
+@media screen and (min-width: 1008px) {
+    .topnav #links1 .links a {
+       font-size: 1.1rem;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    .topnav #links1 a:hover {
+       color: rgb(70, 6, 70);
+    }
+}
 
 .topnav #links1 .links a:active {
     color: black;
 }
 
-.topnav #links1 .links a:hover {
-    color: indianred;
-}
+
 
 .topnav #logo img {
     width: 180px;  
@@ -179,6 +285,8 @@ body {
 
 
 .middlesect {
+    max-width: 1024px;
+    margin: 0 auto;
     width: 100%;
     height: auto;
     background-image: url(../images/fabric2.jpg);
@@ -192,6 +300,23 @@ body {
     text-align: center;
 }
 
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .middlesect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (min-width: 1008px) {
+    .middlesect {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
 .middlesect .tiles {
     width: 98%;
     display: flex;
@@ -202,6 +327,24 @@ body {
     border: 1px solid goldenrod;
     margin: 10px;
 }
+
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .middlesect .tiles{
+        width: 85%;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1008px) {
+    .middlesect .tiles{
+        width: 90%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
 
 .middlesect .tiles .tile-title h2{
     font-family: 'Elsie Swash Caps', cursive;
