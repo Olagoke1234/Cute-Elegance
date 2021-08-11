@@ -12,15 +12,47 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    text-align: center;
+    justify-content: space-between;
+    text-align: right;
     padding: 10px 5px;
 }
 
-.topnav .wrapper {
-    flex: 30%;
-    margin-left: -5px;
+@media screen and (min-width: 641px) and (max-width: 1007px){
+    .topnav{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding: 10px 5px;
+    }
 }
+
+@media screen and (min-width: 1008px) {
+    .topnav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+.topnav .wrapper {
+    flex: 50%;
+    margin-left: -5px;
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    .topnav .wrapper {
+        flex: 22%;
+        margin-left: 15px;
+    }
+}
+
 
 .topnav .wrapper .outer {
     width: 100%;
@@ -97,22 +129,26 @@ body {
     letter-spacing: 2px;
 }
 .topnav #links1 {
+    flex: 50%;
+    padding-top: 50px;
+ }
+
+ @media screen and (min-width: 641px) and (max-width: 1007px){
+.topnav #links1 {
+    flex: 75%;
+    margin-left: -8px;       
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    flex: 65%;
-    width: 100%;
-    height: auto;
-    padding-top: 30px;
-    text-align: right;
-    padding-right: 5px;
+    flex-direction: row;
+    padding-top: 160px;
+    }
  }
 
 .topnav #links1 .links {
-   padding: 12px; 
+   padding: 8px 22px; 
     
 }
+
+    
 
 .topnav #links1 .links:hover {
     background-color: whitesmoke;
@@ -125,6 +161,7 @@ body {
     font-size: 15px;
     font-family: 'Roboto', sans-serif;
 }
+
 
 .topnav #links1 .links a:active {
     color: black;
