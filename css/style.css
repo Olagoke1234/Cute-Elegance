@@ -1,8 +1,8 @@
 body {
     width: 96.8%;
-    height: 100%;
     background-color: rgb(167, 139, 108);
     box-sizing: border-box;
+    overflow-x: hidden;
    
     
 }
@@ -291,7 +291,7 @@ body {
     height: auto;
     background-image: url(../images/fabric2.jpg);
     background-repeat: repeat;
-    background-position: center center;
+    background-position: center;
     object-fit: cover;
     display: flex;
     flex-direction: column;
@@ -305,6 +305,7 @@ body {
     .middlesect {
         display: grid;
         grid-template-columns: 1fr 1fr;
+       
     }
 }
 
@@ -319,29 +320,31 @@ body {
 
 .middlesect .tiles {
     width: 98%;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     border: 1px solid goldenrod;
-    margin: 10px;
+    margin: 0px;
 }
 
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
     .middlesect .tiles{
-        width: 85%;
-        justify-content: space-between;
+        width: 100%;
+        justify-content: space-around;
         align-items: center;
     }
 }
 
 @media screen and (min-width: 1008px) {
     .middlesect .tiles{
-        width: 90%;
+        width: 95%;
         justify-content: space-around;
         align-items: center;
+        margin-left: 13px;
     }
 }
 
