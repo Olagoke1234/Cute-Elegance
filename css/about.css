@@ -303,6 +303,10 @@ body {
 
 .about-mid .main .background{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-mid .main .background img{
@@ -310,28 +314,44 @@ body {
     object-fit: cover;
 }
 
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+.about-mid .main .background img{
+   width: 100%;
+   height: 100vh;
+    object-fit: cover;
+}
+}
+
+
+@media screen and (min-width: 1008px) {
+    .about-mid .main .background img{
+       width: 100%;
+       height: 100vh;
+        object-fit: cover;
+    }
+    }
 .about-mid .main .writeup{
     width: 70%;
     padding: 5px;
    position: absolute;
-   top: 120px;
-   left: 50px;
+   top: 40px;
+   left: 70px;
 }
 
 
 @media screen and (min-width: 641px) and (max-width:1007px){
 .about-mid .main .writeup {
     position: absolute;
-    top: 25%;
-    left: 18%;
-    width: 60%;
+    top: 15%;
+    left: 13%;
+    width: 70%;
 }
 }
 
 @media screen and (min-width: 1008px) {
     .about-mid .main .writeup {
         position: absolute;
-        top: 25%;
+        top: 15%;
         left: 18%;
         width: 60%;
     }
@@ -388,6 +408,14 @@ body {
    
 }
 
+@media screen and (min-width: 1008px) {
+    .about-mid .values{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    }
+
 
 
 .about-mid .values .vismis{
@@ -407,8 +435,16 @@ body {
     align-items: center;
     justify-content: center;
     width: 80%;
+    position: relative;
     
 }
+
+
+@media screen and (min-width: 1008px) {
+    .about-mid .values .vismis .image{
+        position: unset;
+            }
+    }
 
 
 
@@ -419,6 +455,13 @@ body {
 }
 
 
+@media screen and (min-width: 1008px) {
+    .about-mid .values .vismis .image img{
+        width: 425px;
+        height: 300px;
+            }
+    }
+
 .about-mid .values .vismis .writeup{
     width: 80%;
     position: absolute;
@@ -426,6 +469,17 @@ body {
     padding: 10% 11%;
     }
 
+
+    @media screen and (min-width: 1008px) {
+        .about-mid .values .vismis .writeup{
+            position: unset;
+            margin-top: -340px;
+            padding-left: 120px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+    }
     
 
 .about-mid .values .vismis .writeup h2{
@@ -444,6 +498,13 @@ body {
     }
 
 
+    @media screen and (min-width: 1008px){
+        .about-mid .values .vismis .writeup h2{
+            font-size: 30px;
+        }
+        }
+
+
 
 
 .about-mid .values .vismis .writeup p {
@@ -458,9 +519,17 @@ body {
 @media screen and (min-width: 641px) and (max-width:1007px){
     .about-mid .values .vismis .writeup p{
         font-size: 20px;
+       
     }
     }
 
+
+    @media screen and (min-width: 1008px){
+        .about-mid .values .vismis .writeup p{
+            font-size: 20px;
+            width: 80%;
+        }
+        }
 
 .about-mid .bottom-pics {
     width: 100%;
@@ -469,18 +538,29 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: -10px;
 }
 
+@media screen and (min-width: 641px){.about-mid .bottom-pics {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4%;
+}
+}
 .about-mid .bottom-pics .images {
-    width: 33.3%;
+    width: 33%;
     height: 100%;
 }
 
 .about-mid .bottom-pics .images img {
-    width: 95%;
-    height: 95%;
-}
+    width: 200px;
+    height: 200px;
 
+}
 
 
 
