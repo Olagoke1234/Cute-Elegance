@@ -1,456 +1,420 @@
 body {
-    width: 96.8%;
-    background-color: rgb(167, 139, 108);
-    box-sizing: border-box;
-    overflow-x: hidden;
-   
-    
+  width: 96.8%;
+  background-color: rgb(167, 139, 108);
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .topnav {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    text-align: right;
-    padding: 10px 5px;
-}
-
-@media screen and (min-width: 641px) and (max-width: 1007px){
-    .topnav{
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
-        text-align: left;
-        padding: 10px 5px;
-    }
-}
-
-@media screen and (min-width: 1008px) {
-    .topnav {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-.topnav .wrapper {
-    flex: 50%;
-    margin-left: -5px;
-
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: right;
+  padding: 10px 5px;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .topnav .wrapper {
-        flex: 22%;
-        margin-left: 15px;
-    }
+  .topnav {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    padding: 10px 5px;
+  }
 }
 
 @media screen and (min-width: 1008px) {
-    .topnav .wrapper {
-        flex: 70%;
-    }
+  .topnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 }
 
+.topnav .wrapper {
+  flex: 50%;
+  margin-left: -5px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .topnav .wrapper {
+    flex: 22%;
+    margin-left: 15px;
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .topnav .wrapper {
+    flex: 70%;
+  }
+}
 
 .topnav .wrapper .outer {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    padding-left: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  padding-left: 30px;
 }
 
 .topnav .wrapper .outer .alpha {
-   width: 120px;
-   height: 120px;
-   border: 9px solid black;
-   border-radius: 50%;
-   position: relative;
-   background-color: rgb(70, 6, 70);
+  width: 120px;
+  height: 120px;
+  border: 9px solid black;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgb(70, 6, 70);
 }
 
 .topnav .wrapper .outer .alpha .one {
-    font-size: 60px;
-    font-weight: bolder;
-    font-family: 'Elsie Swash Caps', cursive;
-    color: white;
-    position: absolute;
-    top: -45px;
-    left: 20px;
- }
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Elsie Swash Caps", cursive;
+  color: white;
+  position: absolute;
+  top: -45px;
+  left: 20px;
+}
 
- .topnav .wrapper .outer .alpha .two {
-    font-size: 60px;
-    font-weight: bolder;
-    font-family: 'Elsie Swash Caps', cursive;
-    color: white;
-    position: absolute;
-    top: -25px;
-    left: 55px;
- }
+.topnav .wrapper .outer .alpha .two {
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: "Elsie Swash Caps", cursive;
+  color: white;
+  position: absolute;
+  top: -25px;
+  left: 55px;
+}
 
- 
+.topnav .wrapper .name-wrapper {
+  width: 100%;
+  background-color: transparent;
+}
 
- .topnav .wrapper .name-wrapper{
-    width: 100%;
-     background-color: transparent;
- }
-
- .topnav .wrapper .name-wrapper .border{
-    width: 210px;
-    height: 35px;
-    background-color: rgba(111, 119, 128, 0.5);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.topnav .wrapper .name-wrapper .border {
+  width: 210px;
+  height: 35px;
+  background-color: rgba(111, 119, 128, 0.5);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .topnav .wrapper .name-wrapper .border .three {
-    font-size: 20px;
-    font-weight: bolder;
-    font-family: 'Tangerine', cursive;
-    color: black;
-    position: absolute;
-    top: -18px;
-    word-spacing: 0.2rem;
-    letter-spacing: 7px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: "Tangerine", cursive;
+  color: black;
+  position: absolute;
+  top: -18px;
+  word-spacing: 0.2rem;
+  letter-spacing: 7px;
 }
 
 .topnav .wrapper .name-wrapper .border .four {
-    font-size: 12px;
-    font-weight: bolder;
-    font-family: 'Roboto', sans-serif;
-    color: black;
-    position: absolute;
-    top: 9px;
-    word-spacing: 0.7rem;
-    letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bolder;
+  font-family: "Roboto", sans-serif;
+  color: black;
+  position: absolute;
+  top: 9px;
+  word-spacing: 0.7rem;
+  letter-spacing: 2px;
 }
 .topnav #links1 {
-    flex: 10%;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: flex-end;
-    text-align: right;
- }
+  flex: 10%;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: right;
+}
 
- @media screen and (min-width: 641px) and (max-width: 1007px){
-.topnav #links1 {
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .topnav #links1 {
     flex: 75%;
-    margin-left: -5px;       
+    margin-left: -5px;
     display: flex;
     flex-direction: row;
     padding: 5px 7px;
     align-items: center;
-    justify-content: center;   
+    justify-content: center;
     text-align: left;
     background-color: brown;
     margin-top: 135px;
     border-radius: 5px;
     width: 100%;
-    }
- }
-
- @media screen and (min-width: 1008px) {
-    .topnav #links1 {
-        flex: 30%;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        width: 80%;
-        background-color: rgb(70, 6, 70);
-        padding: 5px 5px;
-      
-    }
+  }
 }
 
-
-
+@media screen and (min-width: 1008px) {
+  .topnav #links1 {
+    flex: 30%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    background-color: rgb(70, 6, 70);
+    padding: 5px 5px;
+  }
+}
 
 .topnav #links1 .links {
-   padding: 8px 18px; 
+  padding: 8px 18px;
 }
-
-    
 
 .topnav #links1 .links:hover {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .topnav #links1 .links {
+    padding: 5px 5px;
+    width: 24%;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+  .topnav #links1 .links:hover {
+    background-color: rgb(221, 141, 141);
+  }
+}
+
+@media screen and (min-width: 1008px) {
+  .topnav #links1 .links {
+    padding: 10px 45px;
+    width: 15%;
+    background-color: rgba(111, 119, 128, 0.5);
+    border: 0.5px solid black;
     border-radius: 5px;
-}
-
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-    .topnav #links1 .links { 
-        padding: 5px 5px;
-        width: 24%;
-        text-align: center;
-        
-    }
-}
-
-
-@media screen and (min-width: 641px) and (max-width: 1007px) {
-    .topnav #links1 .links:hover { 
-        background-color: rgb(221, 141, 141);
-    }
-}
-
-
-@media screen and (min-width: 1008px) {
-    .topnav #links1 .links {
-      padding: 10px 45px;
-      width: 15%;
-      background-color: rgba(111, 119, 128, 0.5);
-      border: 0.5px solid black;
-      border-radius: 5px;
-      margin: 0px 7px;
-    }
+    margin: 0px 7px;
+  }
 }
 
 @media screen and (min-width: 1008px) {
-    .topnav #links1 .links:hover {
-        background-image: url(../images/fabric2.jpg);
-       background-size: cover;
-       color: rgb(48, 5, 48);
-       background-color: rgb(0, 0, 0);
-    }
+  .topnav #links1 .links:hover {
+    background-image: url(../images/fabric2.jpg);
+    background-size: cover;
+    color: rgb(48, 5, 48);
+    background-color: rgb(0, 0, 0);
+  }
 }
-
-
 
 .topnav #links1 .links a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
 }
-
 
 .topnav #links1 .links a:hover {
-    color: indianred;
+  color: indianred;
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .topnav #links1 .links a{ 
-        font-size: 1rem;
-        color: white;
-      }
+  .topnav #links1 .links a {
+    font-size: 1rem;
+    color: white;
+  }
 }
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .topnav #links1 .links a:hover { 
-        border-bottom: 0.5px solid goldenrod;
-        border-radius: 0px;
-        color: black;
-        }
+  .topnav #links1 .links a:hover {
+    border-bottom: 0.5px solid goldenrod;
+    border-radius: 0px;
+    color: black;
+  }
 }
 
 @media screen and (min-width: 1008px) {
-    .topnav #links1 .links a {
-       font-size: 1.1rem;
-    }
+  .topnav #links1 .links a {
+    font-size: 1.1rem;
+  }
 }
 
 @media screen and (min-width: 1008px) {
-    .topnav #links1 a:hover {
-       color: rgb(70, 6, 70);
-    }
+  .topnav #links1 a:hover {
+    color: rgb(70, 6, 70);
+  }
 }
 
 .topnav #links1 .links a:active {
-    color: black;
+  color: black;
 }
-
-
 
 .topnav #logo img {
-    width: 180px;  
-    padding-left: 10px; 
+  width: 180px;
+  padding-left: 10px;
 }
-
-
 
 .middlesect {
-    max-width: 1024px;
-    margin: 0 auto;
-    width: 100%;
-    height: auto;
-    background-image: url(../images/fabric2.jpg);
-    background-repeat: repeat;
-    background-position: center;
-    object-fit: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background-image: url(../images/fabric2.jpg);
+  background-repeat: repeat;
+  background-position: center;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
-
 
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .middlesect {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-       
-    }
+  .middlesect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
 
 @media screen and (min-width: 1008px) {
-    .middlesect {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
+  .middlesect {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-
 
 .middlesect .tiles {
-    width: 98%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px solid goldenrod;
-    margin: 0px;
+  width: 98%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid goldenrod;
+  margin: 0px;
 }
 
-
 @media screen and (min-width: 641px) and (max-width: 1007px) {
-    .middlesect .tiles{
-        width: 100%;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .middlesect .tiles {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 @media screen and (min-width: 1008px) {
-    .middlesect .tiles{
-        width: 95%;
-        justify-content: space-around;
-        align-items: center;
-        margin-left: 13px;
-    }
+  .middlesect .tiles {
+    width: 95%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 13px;
+  }
 }
 
-
-.middlesect .tiles .tile-title h2{
-    font-family: 'Elsie Swash Caps', cursive;
-    font-weight: bolder;
-    font-size: 30px;
-    color: navy;
+.middlesect .tiles .tile-title h2 {
+  font-family: "Elsie Swash Caps", cursive;
+  font-weight: bolder;
+  font-size: 30px;
+  color: navy;
 }
 
 .middlesect .tiles .tile-img {
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .middlesect .tiles .tile-link {
-    padding: 20px;
+  padding: 20px;
 }
 
-.middlesect .tiles .tile-link p{
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
-    color: navy;
+.middlesect .tiles .tile-link p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: navy;
 }
 
-.middlesect .tiles .tile-link a{
-    font-size: 18px;
-    color: rgb(2, 2, 14);
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+.middlesect .tiles .tile-link a {
+  font-size: 18px;
+  color: rgb(2, 2, 14);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
-.middlesect .tiles .tile-link a:hover{
-    color: white;
-    opacity: 0.5;
+.middlesect .tiles .tile-link a:hover {
+  color: white;
+  opacity: 0.5;
 }
 
 .middlesect .tiles .tile-img img {
-    width: 300px;
-    height: 300px;
-    object-fit: cover;   
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
-
-
 
 .footer {
-    width: 90%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.footer .address{
-    text-align: center;
-    
+.footer .address {
+  text-align: center;
 }
 
-.footer .address p{
-    color: white;
-    font-family: 'Roboto', sans-serif;
+.footer .address p {
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-.footer .address p em{
-    color: black;
-    font-family: 'Elsie Swash Caps', cursive;
+.footer .address p em {
+  color: black;
+  font-family: "Elsie Swash Caps", cursive;
 }
 
-
-.footer .email a{
-    color: navajowhite;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
+.footer .email a {
+  color: navajowhite;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
 }
 
-.footer .phone{
-   color: white;
-   font-family: 'Elsie Swash Caps', cursive;
+.footer .phone {
+  color: white;
+  font-family: "Elsie Swash Caps", cursive;
 }
 
-.footer .socials{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;    
+.footer .socials {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer .socials .if{
-    padding-top: 25px;  
-    
+.footer .socials .if {
+  padding-top: 25px;
 }
 
-.footer .socials .if a{
-    color: white; 
-    font-family: 'Elsie Swash Caps', cursive;
+.footer .socials .if a {
+  color: white;
+  font-family: "Elsie Swash Caps", cursive;
 }
 
-
-.footer .socials .whatsapp p{
-    color: white; 
-    padding-top: 8px; 
-    font-family: 'Elsie Swash Caps', cursive;
+.footer .socials .whatsapp p {
+  color: white;
+  padding-top: 8px;
+  font-family: "Elsie Swash Caps", cursive;
 }
