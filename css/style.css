@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  width: 96.8%;
+  width: 100%;
   background-color: rgb(167, 139, 108);
   box-sizing: border-box;
   overflow-x: hidden;
@@ -79,8 +85,8 @@ body {
   font-family: "Elsie Swash Caps", cursive;
   color: white;
   position: absolute;
-  top: -45px;
-  left: 20px;
+  top: 0;
+  left: 15px;
 }
 
 .topnav .wrapper .outer .alpha .two {
@@ -89,8 +95,8 @@ body {
   font-family: "Elsie Swash Caps", cursive;
   color: white;
   position: absolute;
-  top: -25px;
-  left: 55px;
+  top: 15px;
+  left: 50px;
 }
 
 .topnav .wrapper .name-wrapper {
@@ -113,7 +119,7 @@ body {
   font-family: "Tangerine", cursive;
   color: black;
   position: absolute;
-  top: -18px;
+  top: 3.5px;
   word-spacing: 0.2rem;
   letter-spacing: 7px;
 }
@@ -124,7 +130,7 @@ body {
   font-family: "Roboto", sans-serif;
   color: black;
   position: absolute;
-  top: 9px;
+  top: 21px;
   word-spacing: 0.7rem;
   letter-spacing: 2px;
 }
